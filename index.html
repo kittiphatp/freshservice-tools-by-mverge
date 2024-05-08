@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch API Activity</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <img src="mverge_logo.png" height="30px" />
+      Tools
+    </header>
+
+    <p class="topic">Function find actor name from activites</p>
+    <hero>
+      <div class="grid-container">
+        <div class="grid-item title">Domain name:</div>
+        <div class="grid-item title-input">
+          <input
+            type="text"
+            name="domain"
+            id="domain"
+            placeholder="domain name"
+            autocomplete="off"
+          />
+        </div>
+        <div class="grid-item title">Username:</div>
+        <div class="grid-item title-input">
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="username"
+            autocomplete="off"
+          />
+        </div>
+        <div class="grid-item title">Password:</div>
+        <div class="grid-item title-input">
+          <input type="password" name="pwd" id="pwd" placeholder="password" />
+        </div>
+      </div>
+    </hero>
+    <main>
+      <div class="input-form">
+        <label>
+          actor name:
+          <input
+            type="text"
+            name="actorname"
+            id="actorname"
+            placeholder="fullname"
+          />
+        </label>
+        <label>
+          start id:
+          <input
+            type="number"
+            name="startid"
+            id="startid"
+            placeholder="number only"
+          />
+        </label>
+
+        <label>
+          stop id:
+          <input
+            type="number"
+            name="stopid"
+            id="stopid"
+            placeholder="number only"
+          />
+        </label>
+      </div>
+      <button id="btnsubmit">submit</button>
+      <button id="btnclear">clear</button>
+      <hr />
+      <p>
+        Total ticket to find:
+        <span id="numticketfind"></span>
+      </p>
+      <p>Ticket Id list Output: <span id="numberticketoutput"></span></p>
+      <textarea rows="4" cols="50"></textarea>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

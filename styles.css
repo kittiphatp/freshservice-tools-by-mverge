@@ -1,0 +1,177 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  /* border: 1px solid black; */
+}
+
+body,
+header {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  padding: 15px;
+  padding-left: 30px;
+  background-color: rgb(2, 107, 255);
+  margin-bottom: 30px;
+  color: white;
+  box-shadow: 5px 8px #eee;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+hero {
+  width: 50vw;
+  height: 150px;
+  margin-bottom: 40px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 8px;
+}
+
+.title {
+  padding: 10px;
+}
+
+.title-input > input {
+  padding: 10px;
+  border-style: none;
+  border: 1px solid #eee;
+}
+
+.topic {
+  margin-bottom: 40px;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: rgb(0, 94, 165);
+}
+
+main {
+  width: 60vw;
+  height: 80vh;
+  /* display: none; */
+  flex-direction: column;
+  gap: 10px;
+}
+
+main .input-form {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+label:nth-of-type(1) {
+  flex-grow: 3;
+}
+label:nth-of-type(2) {
+  flex-grow: 0.1;
+}
+label:nth-of-type(3) {
+  flex-grow: 0.1;
+}
+
+label {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main .input-form input {
+  height: 30px;
+  border: 1px solid #eee;
+  padding: 4px;
+}
+
+input::placeholder {
+  font-size: 10px;
+}
+
+input[type='text'] {
+  width: 400px;
+}
+
+input[type='number'] {
+  width: 80px;
+  -moz-appearance: textfield;
+  text-align: center;
+}
+
+input[type='text']:focus,
+input[type='number']:focus,
+input[type='password']:focus {
+  outline: none;
+  border-style: none;
+  border-bottom: 1px solid skyblue;
+}
+
+button {
+  cursor: pointer;
+  border-style: none;
+  background-color: white;
+  padding: 10px;
+  height: 50px;
+  border-radius: 3px;
+  /* transition: background-color 0.5s, scale 0.3s; */
+}
+
+#btnsubmit {
+  background-color: rgba(173, 255, 47, 0.4);
+}
+
+#btnclear {
+  background-color: rgba(255, 47, 106, 0.4);
+}
+
+/* #btnsubmit {
+  background-color: rgba(173, 255, 47, 0.4);
+  transition: background-color 0.5s, scale 0.3s;
+}
+
+#btnsubmit:hover {
+  background-color: rgba(173, 255, 47, 1);
+  scale: 1.02;
+}
+
+#btnsubmit:active {
+  background-color: yellow;
+}
+
+button:disabled:after {
+  content: ' (Running or stop id less than start id)';
+  color: red;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+  scale: 1.02;
+}
+
+button:active {
+  background-color: yellow;
+} */
+
+hr {
+  width: 100%;
+  height: 10px;
+  border-style: none;
+  border-bottom: 0.5px solid #eee;
+}
